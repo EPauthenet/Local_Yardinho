@@ -1,2 +1,80 @@
-# Local-Yardinho
-Compute the local Yardinho from the .kml Squadrats file
+# Squadrats Local Yard Finder
+
+Find your local "Yard" and "Yardinho" from your Squadrats data! This tool analyzes your visited squadrats (from [squadrats.com](https://squadrats.com)) and identifies secondary Yards. This is useful if you have multiple well-explored regions and want the Yard statistics displayed for them.
+
+## What is a Yard?
+
+A **Yard** is a connected region of squadrats where each square has all 4 neighbors (North, East, South, West) visited.
+- **Squadrat Yard** (Zoom 14): Your yard at the regular squadrat level
+- **Squadratinho Yard** (Zoom 17): Your yard at the finer squadratinho level
+
+## Example Results
+
+### Squadrat Grid (Zoom 14)
+![Squadrat Yard Visualization](figure/squadrat_yards_visualization.png)
+
+**Main Yard: 71 squares** - A single large contiguous yard in a secondary area.
+
+### Squadratinho Grid (Zoom 17)
+![Squadratinho Yard Visualization](figure/squadratinho_yards_visualization.png)
+
+**Main Yard: 236 squares** with 9 secondary yards identified. 
+
+## Requirements
+
+```bash
+pip install pandas matplotlib numpy
+```
+
+## Usage
+
+### 1. Download Your Squadrats Data
+
+1. Go to [squadrats.com](https://squadrats.com)
+2. Download your visited squares as a KML file `squadrats-YYYY-MM-DD.kml`
+
+### 2. Run the Analysis with Jupyter notebook
+```bash
+Local_extract.ipynb
+```
+Adapt the path to .kml file
+Adapt the region you want to explore in Local_extract.ipynb
+
+```bash
+Local_yard.ipynb
+```
+
+### 3. View Results
+
+The script will create:
+
+- **Console output**: Summary of all yards found
+- **Visualizations**: PNG images showing your yards (saved in `figure/` directory)
+  - `squadrat_yards_visualization.png` - Zoom 14 yard map
+  - `squadratinho_yards_visualization.png` - Zoom 17 yard map
+- **Statistics**: JSON files with yard details (saved in `output/` directory)
+- **Tile lists**: CSV files with coordinates of each yard (saved in `output/` directory)
+
+
+### Minimum Yard Size
+
+By default, only yards with **10 or more squares** are reported. You can adjust this threshold in the code by modifying the `MIN_YARD_SIZE` variable.
+
+## How It Works
+
+1. **Parse KML**: Extracts visited squadrat polygons from your KML file
+2. **Create Grid**: Maps all visited squares to tile coordinates at two zoom levels
+3. **Find Complete Squares**: Identifies squares where all 4 neighbors are visited
+4. **Connect Components**: Groups adjacent complete squares into yards
+5. **Visualize**: Creates maps showing your yards overlaid on all visited squares
+
+## Contributing
+
+Feel free to fork, modify, and improve! Some ideas for enhancements:
+- Interactive maps with folium or leaflet
+- Historical yard size tracking
+- Export yards as KML for visualization in Google Earth
+
+## Credits
+
+Based on data from [Squadrats](https://squadrats.com) - A game about exploring the world, one square at a time.
