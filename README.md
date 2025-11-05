@@ -10,8 +10,10 @@ A **Yard** is a connected region of squadrats where each square has all 4 neighb
 
 ## Example Results
 
-![Squadrat Yard Visualization](figure/squadrat_yards_visualization.png)
-![Squadratinho Yard Visualization](figure/squadratinho_yards_visualization.png)
+<p align="center">
+  <img src="figure/squadrat_yards_visualization.png" alt="Squadrat Yard Visualization" width="45%"/>
+  <img src="figure/squadratinho_yards_visualization.png" alt="Squadratinho Yard Visualization" width="45%"/>
+</p>
 **Main local Yard of 71 squares and main local Yardinho of 236 squares with 9 secondary yards identified.**
 
 
