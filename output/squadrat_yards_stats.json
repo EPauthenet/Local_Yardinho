@@ -1,0 +1,18 @@
+[
+  {
+    "num_squares": 71,
+    "tile_x_min": 8469,
+    "tile_x_max": 8480,
+    "tile_y_min": 5795,
+    "tile_y_max": 5811,
+    "lat_min": 46.25584681848032,
+    "lat_max": 46.51351558059736,
+    "lon_min": 6.08642578125,
+    "lon_max": 6.35009765625,
+    "center_lat": 46.38468119953884,
+    "center_lon": 6.21826171875,
+    "name": "Yard",
+    "rank": 1,
+    "num_tiles": 71
+  }
+]
