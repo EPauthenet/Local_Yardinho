@@ -16,6 +16,8 @@ A **Yard** is a connected region of squadrats where each square has all 4 neighb
 </p>
 Main local Yard of 71 squares and main local Yardinho of 236 squares with 9 secondary yards identified.
 
+![Coverage map of Geneva](figure/Geneva_coverage.png)
+Compute the coverage of a selected region. Here Geneva alone.
 
 ## Requirements
 
@@ -48,6 +50,11 @@ Local_extract.ipynb
 Local_yard.ipynb
 ```
 - Select the region you want to explore in Local_yard.ipynb  
+
+```bash
+geo_filtering.ipynb
+```
+- To compute the coverage of a geographical region inside the bounded box. Only done for Geneva here.
 
 ### 3. View Results
 
