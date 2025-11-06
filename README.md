@@ -32,14 +32,22 @@ pip install pandas matplotlib numpy
 
 ### 2. Run the Analysis with Jupyter notebook
 ```bash
+Find_lonlat.ipynb
+```
+- Change the path to your .kml file  
+- Map it and find a lon,lat bounded box to explore 
+
+```bash
 Local_extract.ipynb
 ```
-- Adapt the path to .kml file  
-- Adapt the region you want to explore in Local_extract.ipynb  
+- Change the path to your .kml file  
+- Change the lon,lat bounded box you want to explore in Local_extract.ipynb  
+- name your region `REGION`
 
 ```bash
 Local_yard.ipynb
 ```
+- Select the region you want to explore in Local_yard.ipynb  
 
 ### 3. View Results
 
