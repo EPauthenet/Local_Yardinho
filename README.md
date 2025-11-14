@@ -54,7 +54,7 @@ Local_yard.ipynb
 ```bash
 geo_filtering.ipynb
 ```
-- To compute the coverage of a geographical region inside the bounded box. Only done for Geneva here.
+- To compute the coverage of a geographical region inside the bounded box. Only done for Switzerland here.
 
 ### 3. View Results
 
