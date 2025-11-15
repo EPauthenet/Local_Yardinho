@@ -5,8 +5,8 @@ Find your local "Yard" and "Yardinho" from your Squadrats data! This tool analyz
 ## What is a Yard?
 
 A **Yard** is a connected region of squadrats where each square has all 4 neighbors (North, East, South, West) visited.
-- **Squadrat Yard** (Zoom 14): Your yard at the regular squadrat level
-- **Squadratinho Yard** (Zoom 17): Your yard at the finer squadratinho level
+- **Yard** (Zoom 14): Your yard at the regular squadrat level
+- **Yardinho** (Zoom 17): Your yard at the finer squadratinho level
 
 ## Example Results
 
